@@ -1,0 +1,51 @@
+/* 写个 vue 的从下面往上滑的动画，刚开始透明 */
+/* 下面我们会解释这些 class 是做什么的 */
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.2s ease;
+}
+
+.slide-up-enter-from {
+  transform: translateY(30%);
+}
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(0%);
+}
+
+.light-up-enter-active {
+  animation: light-up-in .5s ease-out both;
+}
+
+.light-up-leave-active {
+  animation: light-up-out .2s ease-out both;
+}
+
+@keyframes light-up-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.n-icon {
+    color: white !important;
+}
+* {
+    color: white;
+    transition: all .2s ease-in-out;
+}
+.n-tag, .n-button {
+  --n-color: #7c73ff !important;
+  cursor: pointer;
+  user-select: none;
+}
+.n-base-icon > path {
+  color: var(--primary-color) !important;
+}
+.n-divider:not(.n-divider--vertical) {
+  margin-top: 12px;
+  margin-bottom: 12px 
+}

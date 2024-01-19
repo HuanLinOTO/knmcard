@@ -1,0 +1,14 @@
+* {
+    /* --bg-color: #11009E; */
+    --bg-color: rgb(29,32,34);
+    --bg-color-light: rgb(48,50,59);
+    --bg-color-deeper: rgb(28,29,36);
+    /* --sidebar-color: #4942E4; */
+    --sidebar-color: rgb(10,11,13);
+    /* --action-btn-color: #ED5AB3; */
+    --primary-color: #7c73ff;
+    --primary-color-secondary: #7973cf;
+    --primary-color-selected: #c678dd;
+    --action-btn-color: var(--primary-color);
+    --action-btn-color-selected: var(--primary-color-selected);
+}
